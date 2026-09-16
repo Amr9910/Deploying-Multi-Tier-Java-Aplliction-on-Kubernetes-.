@@ -14,9 +14,6 @@ This project focuses on building an automated **End-to-End CI/CD Pipeline** usin
 
 ---
 
-
----
-
 ## 🛠️ Tools & Technologies Used
 
 * **Automation Server:** Jenkins
