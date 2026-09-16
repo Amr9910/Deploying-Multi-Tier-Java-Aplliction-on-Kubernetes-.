@@ -110,26 +110,8 @@ It covers the complete infrastructure setup using declarative YAML manifests, es
 
 ---
 
-## 🏗️ Multi-Tier Architecture & Workflow
 
-```text
-                                 [ User Traffic ]
-                                        │
-                                        ▼
-                           [ Nginx LoadBalancer / Ingress ]
-                                        │
-                                        ▼ (Service: ClusterIP / NodePort)
-                      ┌───────────────────────────────────┐
-                      │   Java Web Application Tier       │
-                      │   (Tomcat Deployments / Pods)     │
-                      └─────────────────┬─────────────────┘
-                                        │
-                         ┌──────────────┴──────────────┐
-                         ▼                             ▼
-              [ K8s Secrets / ConfigMap ]     [ Database Tier (MySQL) ]
-              (DB Passwords & Configs)        (StatefulSet + PVC Storage)
-
-
+<img width="1200" height="552" alt="image" src="https://github.com/user-attachments/assets/3d436440-db06-48a3-ac2e-cb245beebec7" />
 
 
 
