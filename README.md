@@ -1,11 +1,9 @@
 # 🚀 End-to-End-CI-CD-Pipeline-for-Java-Applications-using-Jenkins-Docker
 
-[![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=Jenkins&logoColor=white)](https://www.jenkins.io/)
-[![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
-[![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)](https://www.java.com/)
-[![Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white)](https://maven.apache.org/)
-[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
 
+## 📌 Project Overview
+
+This project focuses on building an automated **End-to-End CI/CD Pipeline** using **Jenkins**. It automates the entire software delivery lifecycle for a Java-based application—from source code integration and compilation to automated unit testing, containerization, and deployment.
 ---
 
 
@@ -13,9 +11,11 @@
 
 --- 
 
-## 📌 Project Overview
-
-This project focuses on building an automated **End-to-End CI/CD Pipeline** using **Jenkins**. It automates the entire software delivery lifecycle for a Java-based application—from source code integration and compilation to automated unit testing, containerization, and deployment.
+[![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=Jenkins&logoColor=white)](https://www.jenkins.io/)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
+[![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)](https://www.java.com/)
+[![Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white)](https://maven.apache.org/)
+[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
 
 ---
 
