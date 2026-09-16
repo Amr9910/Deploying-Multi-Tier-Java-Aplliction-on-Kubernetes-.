@@ -1,67 +1,52 @@
-# 🚀 End-to-End-CI-CD-Pipeline-for-Java-Applications-using-Jenkins-Docker
-
+# ☸️ Multi-Tier Java Web Application Deployment on Kubernetes
 
 ## 📌 Project Overview
 
-This project focuses on building an automated **End-to-End CI/CD Pipeline** using **Jenkins**. It automates the entire software delivery lifecycle for a Java-based application—from source code integration and compilation to automated unit testing, containerization, and deployment.
+This project demonstrates the end-to-end orchestration and deployment of a scalable, fault-tolerant, **Multi-Tier Java Web Application** onto a **Kubernetes Cluster**.
+
+It covers the complete infrastructure setup using declarative YAML manifests, establishing internal and external network communication, implementing persistent storage, managing sensitive credentials, and executing zero-downtime **Rolling Updates**.
+
+<img width="1024" height="514" alt="image" src="https://github.com/user-attachments/assets/0e288308-70ec-446d-b841-d7fd032733e5" />
+
 ---
-
-
-<img width="1456" height="731" alt="Gemini_Generated_Image_xb8bp4xb8bp4xb8b" src="https://github.com/user-attachments/assets/c2dbaa61-ed7a-4e7f-bab1-169592bf1c47" />
-
---- 
-
-[![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=Jenkins&logoColor=white)](https://www.jenkins.io/)
+[![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)](https://kubernetes.io/)
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
-[![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)](https://www.java.com/)
-[![Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white)](https://maven.apache.org/)
-[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
+[![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)](https://www.nginx.com/)
+[![Apache Tomcat](https://img.shields.io/badge/Apache%20Tomcat-F8DC75?style=for-the-badge&logo=apache-tomcat&logoColor=black)](https://tomcat.apache.org/)
+[![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
+[![YAML](https://img.shields.io/badge/YAML-CB171E?style=for-the-badge&logo=yaml&logoColor=white)](https://yaml.org/)
+
+
 
 ---
 
 ## 🛠️ Tools & Technologies Used
 
-* **Automation Server:** Jenkins
-* **Version Control System:** Git & GitHub
-* **Build Automation:** Apache Maven
+* **Orchestration:** Kubernetes (k8s)
+* **Command Line Interface:** `kubectl`
+* **Configuration:** Kubernetes Declarative YAML Manifests
 * **Containerization:** Docker
-* **Application Server:** Apache Tomcat
-* **Programming Language:** Java
+* **Web Server / Reverse Proxy:** Nginx
+* **Application Server:** Apache Tomcat (Java App)
+* **Database Layer:** MySQL / Stateful Backend
 
 ---
 
-## 🎯 Purpose & Objectives
-
-The primary goal of this project is to gain practical, hands-on experience in automating software build, test, and deployment workflows using Jenkins, eliminating manual deployment errors, and achieving continuous delivery.
-
----
-
-## 🧠 Key Learnings & Skills Acquired
-
-* **Jenkins Pipeline Configuration:** Designing declarative pipelines (`Jenkinsfile`) to structure multi-stage CI/CD workflows.
-* **Build & Test Automation:** Triggering automated Java builds and executing test suites using Maven.
-* **Tool Integration:** Connecting Git, Maven, Docker, and deployment environments into a single pipeline.
-* **Containerized Deployment:** Packaging Java artifacts into Docker images and deploying containers to Tomcat servers.
-
----
-
-## 📋 Prerequisites
-
-To replicate or understand this project implementation, the following background knowledge is recommended:
-* Basic understanding of DevOps principles and CI/CD concepts.
-* Familiarity with Jenkins dashboard and job configurations.
-* Fundamental knowledge of Java application architecture.
-* Hands-on experience with Git version control commands.
-
----
-
-## 🔄 CI/CD Pipeline Workflow
+## 🏗️ Multi-Tier Architecture & Workflow
 
 ```text
-[ Git / GitHub ] ──(Trigger)──> [ Jenkins Pipeline ]
-                                       │
-                                       ├──> 1. Checkout Source Code
-                                       ├──> 2. Build & Test (Maven)
-                                       ├──> 3. Package WAR Artifact
-                                       ├──> 4. Build Docker Image
-                                       └──> 5. Deploy to Tomcat Container
+                                 [ User Traffic ]
+                                        │
+                                        ▼
+                           [ Nginx LoadBalancer / Ingress ]
+                                        │
+                                        ▼ (Service: ClusterIP / NodePort)
+                      ┌───────────────────────────────────┐
+                      │   Java Web Application Tier       │
+                      │   (Tomcat Deployments / Pods)     │
+                      └─────────────────┬─────────────────┘
+                                        │
+                         ┌──────────────┴──────────────┐
+                         ▼                             ▼
+              [ K8s Secrets / ConfigMap ]     [ Database Tier (MySQL) ]
+              (DB Passwords & Configs)        (StatefulSet + PVC Storage)
