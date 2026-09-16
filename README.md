@@ -8,6 +8,11 @@
 
 ---
 
+
+<img width="1456" height="731" alt="Gemini_Generated_Image_xb8bp4xb8bp4xb8b" src="https://github.com/user-attachments/assets/c2dbaa61-ed7a-4e7f-bab1-169592bf1c47" />
+
+--- 
+
 ## 📌 Project Overview
 
 This project focuses on building an automated **End-to-End CI/CD Pipeline** using **Jenkins**. It automates the entire software delivery lifecycle for a Java-based application—from source code integration and compilation to automated unit testing, containerization, and deployment.
