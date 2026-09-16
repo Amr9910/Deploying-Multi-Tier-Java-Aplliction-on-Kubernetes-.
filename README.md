@@ -31,35 +31,7 @@ It covers the complete infrastructure setup using declarative YAML manifests, es
 * **Web Server / Reverse Proxy:** Nginx
 * **Application Server:** Apache Tomcat (Java App)
 * **Database Layer:** MySQL / Stateful Backend
-
-
-
 ---
-
-## 🏗️ Multi-Tier Architecture & Workflow
-
-```text
-                                 [ User Traffic ]
-                                        │
-                                        ▼
-                           [ Nginx LoadBalancer / Ingress ]
-                                        │
-                                        ▼ (Service: ClusterIP / NodePort)
-                      ┌───────────────────────────────────┐
-                      │   Java Web Application Tier       │
-                      │   (Tomcat Deployments / Pods)     │
-                      └─────────────────┬─────────────────┘
-                                        │
-                         ┌──────────────┴──────────────┐
-                         ▼                             ▼
-              [ K8s Secrets / ConfigMap ]     [ Database Tier (MySQL) ]
-              (DB Passwords & Configs)        (StatefulSet + PVC Storage)
-
-
-
-
-
-
 
 
 * First Take Clone from Git Hub To my Machine 
@@ -123,6 +95,35 @@ It covers the complete infrastructure setup using declarative YAML manifests, es
 
 
 <img width="1888" height="863" alt="AdobeExpressPhotos_483c471b236c4f78ac799f8ba15d3829_CopyEdited" src="https://github.com/user-attachments/assets/1d5b5274-f1a4-450d-a1cd-4fb981d427bc" />
+
+---
+
+## 🏗️ Multi-Tier Architecture & Workflow
+
+```text
+                                 [ User Traffic ]
+                                        │
+                                        ▼
+                           [ Nginx LoadBalancer / Ingress ]
+                                        │
+                                        ▼ (Service: ClusterIP / NodePort)
+                      ┌───────────────────────────────────┐
+                      │   Java Web Application Tier       │
+                      │   (Tomcat Deployments / Pods)     │
+                      └─────────────────┬─────────────────┘
+                                        │
+                         ┌──────────────┴──────────────┐
+                         ▼                             ▼
+              [ K8s Secrets / ConfigMap ]     [ Database Tier (MySQL) ]
+              (DB Passwords & Configs)        (StatefulSet + PVC Storage)
+
+
+
+
+
+
+
+
 
 
 
