@@ -32,6 +32,32 @@ It covers the complete infrastructure setup using declarative YAML manifests, es
 * **Application Server:** Apache Tomcat (Java App)
 * **Database Layer:** MySQL / Stateful Backend
 
+
+<img width="1897" height="804" alt="AdobeExpressPhotos_cbd6e8a633824b7eb32e1457b096905c_CopyEdited" src="https://github.com/user-attachments/assets/5ee06852-6edd-438b-bec3-324e689d6859" />
+
+* Rabbit MQ Deployment.yml * 
+<img width="581" height="811" alt="AdobeExpressPhotos_cef7a643178944229724084217a11b15_CopyEdited" src="https://github.com/user-attachments/assets/68277160-7aef-4ea0-ab3c-32d95b01f04c" />
+
+* app-secret.yml *
+<img width="313" height="220" alt="AdobeExpressPhotos_4999f238c9f044728588b6ed5530df7f_CopyEdited" src="https://github.com/user-attachments/assets/e8da5118-faff-41c7-9908-9f2c8830647d" />
+
+* memcache-deployment.yml *
+<img width="565" height="799" alt="AdobeExpressPhotos_571d4455f3f64573a8fb45d152540650_CopyEdited" src="https://github.com/user-attachments/assets/144dc426-9e5e-4d5a-abc4-7a3fd97c93e2" />
+
+
+* vim memcahe-clusterip.yml *
+
+<img width="488" height="802" alt="AdobeExpressPhotos_bc9a823f0ff646d9bdc71957bacce596_CopyEdited" src="https://github.com/user-attachments/assets/692fec3f-a25e-4f79-9006-944c7d6af595" />
+
+
+* vproapp-service.yml  *
+
+* vproappdep.yml *
+
+
+*  *
+
+
 ---
 
 ## 🏗️ Multi-Tier Architecture & Workflow
