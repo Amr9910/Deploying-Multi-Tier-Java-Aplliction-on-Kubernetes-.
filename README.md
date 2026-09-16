@@ -2,9 +2,9 @@
 
 ## 📌 Project Overview 
 
-## This project demonstrates the end-to-end orchestration and deployment of a scalable, fault-tolerant, Multi-Tier Java Web Application onto a Kubernetes Cluster.
+This project demonstrates the end-to-end orchestration and deployment of a scalable, fault-tolerant, Multi-Tier Java Web Application onto a Kubernetes Cluster.
 
-## It covers the complete infrastructure setup using declarative YAML manifests, establishing internal and external network communication, implementing persistent storage, managing sensitive credentials, and executing zero-downtime Rolling Updates.
+It covers the complete infrastructure setup using declarative YAML manifests, establishing internal and external network communication, implementing persistent storage, managing sensitive credentials, and executing zero-downtime Rolling Updates.
 
 
 
