@@ -1,10 +1,12 @@
 # ☸️ Multi-Tier Java Web Application Deployment on Kubernetes
 
-## 📌 Project Overview
+## 📌 Project Overview 
 
-**This project demonstrates the end-to-end orchestration and deployment of a scalable, fault-tolerant, Multi-Tier Java Web Application onto a Kubernetes Cluster.
+## This project demonstrates the end-to-end orchestration and deployment of a scalable, fault-tolerant, Multi-Tier Java Web Application onto a Kubernetes Cluster.
 
-It covers the complete infrastructure setup using declarative YAML manifests, establishing internal and external network communication, implementing persistent storage, managing sensitive credentials, and executing zero-downtime Rolling Updates.**
+## It covers the complete infrastructure setup using declarative YAML manifests, establishing internal and external network communication, implementing persistent storage, managing sensitive credentials, and executing zero-downtime Rolling Updates.
+
+
 
 <img width="1024" height="514" alt="image" src="https://github.com/user-attachments/assets/0e288308-70ec-446d-b841-d7fd032733e5" />
 
