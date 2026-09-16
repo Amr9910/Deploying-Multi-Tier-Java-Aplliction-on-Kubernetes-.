@@ -14,14 +14,6 @@ This project focuses on building an automated **End-to-End CI/CD Pipeline** usin
 
 ---
 
-## 📊 Project Metadata
-
-| Attribute | Details |
-| :--- | :--- |
-| **Project Level** | Advanced |
-| **Estimated Duration** | 3 – 4 Hours |
-| **Project Type** | Live Online / Hands-on Task |
-| **Domain** | DevOps & Infrastructure Automation |
 
 ---
 
